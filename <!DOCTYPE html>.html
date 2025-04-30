@@ -7,9 +7,9 @@
 
 <style>
 body{
-  background-image:url(https://e0.pxfuel.com/wallpapers/218/225/desktop-wallpaper-red-gamer-red-gaming.jpg);
+  background: url('https://e0.pxfuel.com/wallpapers/218/225/desktop-wallpaper-red-gamer-red-gaming.jpg') no-repeat center center fixed;
+      background-size: cover;
 }
-  
 .img{
   border-style:inset;
   border: width 1000px; 
@@ -28,7 +28,7 @@ body{
 
 .games{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:black
+  color:white
 }
 
 .opis{
@@ -62,7 +62,8 @@ body{
   border-radius: 20px;
   width:20cm;
   box-shadow:inset;
-  background-color: rgb(223, 223, 223);
+  background: rgba(0, 0, 0, 0.6); /* czarny z 60% kryciem */
+
 }
 
 
@@ -139,19 +140,61 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           border-radius: 10px;
         }
 
-        .footer1{
-          text-align: center;
-          border-color:black;
-          height: 2cm;
-          width: 30cm;
-          background-color: grey;
-          border-radius: 5px;
+        footer {
+  background: rgba(0, 0, 0, 0.6); /* czarny z lekką przeźroczystością */
+  backdrop-filter: blur(6px); /* blur w tle */
+  -webkit-backdrop-filter: blur(6px); /* jebane Safari */
+  color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 0;
+  max-width: 1200px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
+}
 
-        }
+footer img {
+  height: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-nav button {
+  background: rgba(255, 255, 255, 0.85);
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 8px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-nav button:hover {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.footer-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
 
         .macos{
           text-align: ;
-          color:black;
+          color:white;
           font-family: 'Courier New', Courier, monospace;
           font-size: medium;
           
@@ -159,7 +202,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .macos1{
           text-align: ;
-          color:black;
+          color:white;
           font-family: 'Courier New', Courier, monospace;
           font-size: 20px;
           text-align: right;
@@ -172,12 +215,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         border-radius: 20px;
         width: 15cm;
         box-shadow:inset;
-        background-color: rgb(223, 223, 223);
+        background: rgba(0, 0, 0, 0.6); /* czarny z 60% kryciem */
+
 
         }
        
         #hdmax{
-          background-color: whitesmoke;
+          background: rgba(0, 0, 0, 0.6); /* czarny z 60% kryciem */
+
           width: 20cm;
           border-radius: 20px;
           position:absolute;
@@ -189,7 +234,75 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
        
 
-        
+        .download-button {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .download-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    .download-button::after {
+      content: "⬇";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease, right 0.3s ease;
+    }
+
+    .download-button:hover::after {
+      right: 15px;
+      opacity: 1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .footer-nav button {
+  background: rgba(255, 255, 255, 0.1); /* przezroczystość */
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-nav button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: black;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.footer-nav button:active {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  transform: scale(0.95);
+}
+
+
+    
 
 </style>
 
@@ -198,7 +311,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 
 <center>
-  <footer class="footer1">
+  <footer>
     
     
     <img id="logo" style="float: left; margin-right: 15px;"   src="https://retrogames.biz/images/RetroGames-2021-logo-928.png"
@@ -207,13 +320,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
     
       <a  href="file:///Users/macbook/Documents/HTML/%3C!DOCTYPE%20html%3E.html">
-        <button  class="button">Strona główna</button>
+        <button>Strona główna</button>
       </a>
       <a    href="https://p3jtiiikcm.github.io/Retro-Gry/O-nas.html">
-      <button class="button">O nas</button>
+      <button>O nas</button>
       </a>
       <a class="a" href="https://p3jtiiikcm.github.io/Retro-Gry/linki.html">
-        <button class="button">Nowości</button>
+      <button>Nowości</button>
       </a>
    
     <a href="https://p3jtiiikcm.github.io/Retro-Gry/katalog.html">
@@ -257,7 +370,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
    
    <ul>
-    <li><p style="font-family:'Courier New', Courier, monospace"><span style="color: black"><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:green"><strong>UWAGA!</strong></p><br></li>
+    <li><p style="font-family:'Courier New', Courier, monospace"><span style="color: white"><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:green"><strong>UWAGA!</strong></p><br></li>
    </ul><p style="font-family:'Courier New', Courier, monospace"><span style="color:green">Do tych gier jest wymagany program <strong><em>Dos-Box</em></strong>.<br>
     Bez tej aplikacji <strong>nie urochomisz tych gier!</strong><br></span></p>
      </p>
@@ -266,8 +379,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        
   <ul>
   <li><a href="https://sourceforge.net/projects/dosbox/files/latest/download">
-    <img id="image1" src="https://files.libertycity.net/download/gta1_programms/thumbs/2020-04/dosbox-v-0-74-3-0-75-1_1686003980_835598.jpg" width="100" height="40">
-    
+    <button class="download-button">Pobierz DosBox</button>
   
   </a>
    <br>
@@ -282,6 +394,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   <br>
   <br>
   <header style="float: right; margin-right: 1px;" id="hdmax">
+   <ul>
     <li>
       <p class="games">Max Payne Demo</p><br>
       <p class="opis">Max Payne to rewolucyjna gra akcji TPS powstała przy współpracy zespołów Remedy i 3D Realms.<br>
@@ -289,16 +402,20 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           Utrzymana w mrocznych klimatach noir widowiskowa strzelanka TPP.</p>
           <br>
           <a href="https://www.classicdosgames.com/files/games/remedy/MaxPayneDemo1-05.exe">
-            <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png" width="100"
-            alt="download button">
+            <button class="download-button">Pobierz</button>
            </a></li>
            <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
            <p class="macos">Nie sprawdzony plik! (moze mieć wirusa)</p>
             <br>
             <img class="img" src="https://image.api.playstation.com/cdn/EP1004/CUSA04488_00/wkULSyjvjH6xGS9juseLnkjmtG6VGlem.png?w=440"
             width="350" alt="zdjęcie gry Max Payne">
+            <br>
+            <br>
+            <br>
+            
   
     </li>
+   </ul>
   </header>
 </header>
  
@@ -311,9 +428,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
   
    <ul>
-    <h2 style="font-family:'Courier New', Courier, monospace"><span style="color:black">Tutaj mozesz pobrać retro gry takie jak:</span> </h2>
+    <h2 style="font-family:sans-serif"><span style="color:white">Tutaj mozesz pobrać retro gry takie jak:</span> </h2>
     <br>
-     <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:black"><strong>Deluxe Ski Jump 2</strong></span></p><br>
+     <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:white"><strong>Deluxe Ski Jump 2</strong></span></p><br>
        
      <p style="font-family:'Courier New', Courier, monospace"><span style="color:green">W <em><strong>Deluxe Ski Jump</strong></em> gracz kieruje <strong>skoczkiem narciarskim</strong>. <br>
        Zasady skok u w całej serii są identyczne – sterowanie odbywa się<br> <strong>jedynie za pomocą myszy</strong>. <br>
@@ -322,8 +439,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        <br>
        <br>
        <a href="https://www.mediamond.fi/dsj2/downloads/dsj210.zip">
-       <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-       width="100"> 
+        <button class="download-button">Pobierz</button>
        
        
       </a>
@@ -340,7 +456,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width="350" alt="zdjęcie gry DSJ2">
     <br>
     <br>
-     <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:black"><strong>Doom 95</strong></span></p><br>
+     <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:white"><strong>Doom 95</strong></span></p><br>
        <br>
        <p style="font-family: 'Courier New', Courier, monospace"><span style="color:green">Gracz wciela się w postać <strong><em>bezimiennego żołnierza</em></strong>, <br>członka kosmicznego <strong>oddziału marines</strong>.<br>
          Po tym jak główny bohater <strong>sprzeciwił się rozkazowi oficera</strong><br> otwarcia ognia do ludności cywilnej,<br>
@@ -352,8 +468,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   </p>         <br>
         <br>
         <a href="https://archive.org/download/DOOM_95/doom95.zip">
-         <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png" width="100"
-         alt="download button">
+         <button class="download-button">Pobierz</button>
+         
         </a></li>
         <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
          <br>
@@ -367,7 +483,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           <details>
             <summary>Pokaż więcej</summary>
             <div class="more-content">
-              <li><p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><span style="color:black"><strong>Prince of Persia</strong></span></p><br>
+              <li><p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><span style="color:white"><strong>Prince of Persia</strong></span></p><br>
                 <br>
                <p style="font-family: 'Courier New', Courier, monospace"><span style="color:green"><strong><em>Platformowa zręcznościowa gra komputerowa</em></strong><br> wydana w roku <strong>1989</strong> przez firmę <strong><em>Brøderbund Software</em></strong>;<br> 
                 seria komputerowych gier platformowych stworzonych<br> i wydanych przez firmę <strong><em>Brøderbund Software</em></strong>.<br> 
@@ -376,7 +492,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 </span></p><br>
                 <br>
                 <a href="https://www.myabandonware.com/download/pot-prince-of-persia">
-                 <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png" width="100">
+                  <button class="download-button">Pobierz</button>
                 
                </a>
                <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
@@ -387,7 +503,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                <br>
                <br>
                 
-                <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:black"><strong>Wolfenstein 3D</strong></span></p><br>
+                <li><p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:white"><strong>Wolfenstein 3D</strong></span></p><br>
                   <br>
                  <p style="font-family:'Courier New', Courier, monospace"><span style="color: green"> <strong>Strzelanka pierwszoosobowa</strong> wyprodukowana przez<br> <strong><em>id Software</em></strong> i wydana przez <strong><em>Apogee Software 5<br></em></strong> maja <strong>1992 roku</strong>. <br>
                   Jest to kontynuacja gier <strong>Castle Wolfenstein i Beyond Castle Wolfenstein</strong>,<br> wydanych przez <strong><em>Muse Software</em></strong> odpowiednio w <strong>latach 1981 i 1984</strong> na platformie <strong><em>Apple II</em></strong>.<br>
@@ -395,8 +511,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
          </p>      <br>
          <br>
          <a href="https://www.dosgamesarchive.com/file/wolfenstein-3d/w3d-box">
-          <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-          width="100"> 
+          <button class="download-button">Pobierz</button>
+          
          </a> <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p><br>
             <br>
             <img class="img" src="https://xblafans.com/wp-content/uploads/2013/06/Wolfenstein-3D-logo.jpg"
@@ -405,13 +521,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             <br>
                 </li>
                 <li>
-                 <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:black">Prehistorik 2</span></p><br>
+                 <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><span style="color:white">Prehistorik 2</span></p><br>
                  <p style="font-family:'Courier New', Courier, monospace"><span style="color:green">Podobnie jak w <strong>poprzedniej części</strong>, w grze <strong><em>Prehistorik 2</em></strong> gracz wciela<br> się w <strong>Jaskiniowca</strong>, który wyrusza w pełną <strong>niebezpieczeństw podróż.</strong> <br>
          <strong>poprawiono grafikę</strong>, jak również dodano wiele nowych, <br>humorystycznych <strong>akcentów</strong> podczas gry.</span></p>
          <br>
          <a href="https://gamesnostalgia.com/download/prehistorik-2/1536">
-           <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-           width="100">  
+          <button class="download-button">Pobierz</button>
+        
+           
          </a>
          <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
          
@@ -434,7 +551,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                        <strong><em>różowa antenka</em></strong>.</p>
                        <br>
                        <a href="https://www.abandonwaredos.com/abandonware-game.php?abandonware=Bomberman&gid=2049">
-                        <img src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png" width="100">
+                        <button class="download-button">Pobierz</button>
                        </a>
                        <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
                        <br>
@@ -450,8 +567,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                  <p class="opis">Komputerowa gra platformowa oparta na <strong>disnejowskim</strong><br> filmie animowanym <strong><em>Król Lew</em></strong>, wydana<br> przez <strong><em>Virgin Interactive</em></strong> w <strong>1994 roku</strong>.<br> Gracz wciela się w niej w <strong>lwa Simbę</strong>, którego zadaniem jest <strong>pokonanie wuja Skazy</strong>,<br> uzurpatora <strong>królewskiego</strong>.</p>
                  <br>
                  <a href="https://www.abandonwaredos.com/aw-download.php?tit=The+Lion+King&dlc=Zy9saW9ua2luZy56aXA=&rem=5&gid=1729&zdi=MjAwMQ==">
-                   <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-                         width="100"></a>
+                  <button class="download-button">Pobierz</button>
+                         </a>
                          <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
                          <br>
                          <br>
@@ -476,8 +593,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                             </p>
                             <br>
                             <a href="https://www.abandonwaredos.com/abandonware-game.php?abandonware=Street+Fighter+2&gid=1997">
-                              <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-                              width="100"></a>
+                              <button class="download-button">Pobierz</button>
+                              </a>
                               <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
                               <br>
                               <br>
@@ -494,8 +611,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     (tylko w Brazylii) oraz po latach na <strong>Xboxa 360</strong>.</p>
                     <br>
                     <a href="https://archive.org/download/DUKE3D_DOS/DUKE3D.zip">
-                      <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-                      width="100">
+                      <button class="download-button">Pobierz</button>
                     </a>
                     <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
                     <br>
@@ -510,8 +626,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                           pokonanie <strong>przeciwnika</strong> poprzez <strong>eliminację</strong> wszystkich <strong>członków</strong> jego drużyny.</p>
                           <br>
                           <a href="https://www.dosgamesarchive.com/file.php?id=228">
-                            <img class="image" src="https://www.macronstorebristol.co.uk/wp-content/uploads/2023/02/Download-for-Windows-Button.png"
-                            width="100">
+                            <button class="download-button">Pobierz</button>
                           </a>
                           <p class="macos">Nie dostępne dla komputerów z systemem MacOS</p>
                           <br>
