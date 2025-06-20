@@ -327,6 +327,29 @@ footer img {
     }
 
     
+    .fancy-button {
+      padding: 16px 32px;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(255, 65, 108, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .fancy-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(255, 65, 108, 0.4);
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    }
+
+    .fancy-button:active {
+      transform: scale(0.98);
+    }
+  
 
 </style>
 
@@ -338,8 +361,7 @@ footer img {
   <footer>
     
     
-    <img id="logo" style="float: left; margin-right: 15px;"   src="https://retrogames.biz/images/RetroGames-2021-logo-928.png"
-    width="130"> <br>
+    <img id="logo"  src="https://sdmntpritalynorth.oaiusercontent.com/files/00000000-07c0-6246-8a33-61074234a604/raw?se=2025-06-20T15%3A34%3A17Z&sp=r&sv=2024-08-04&sr=b&scid=a5e76728-d8d4-581c-8730-af24b8b966db&skoid=b928fb90-500a-412f-a661-1ece57a7c318&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-20T13%3A42%3A29Z&ske=2025-06-21T13%3A42%3A29Z&sks=b&skv=2024-08-04&sig=l%2BiRHitpJ/bKr2H1mSqJAZfacpl7SdZG4%2BrbETcoCAI%3D"> <br>
    
    
     
@@ -354,7 +376,7 @@ footer img {
       </a>
    
     <a href="https://p3jtiiikcm.github.io/Retro-Gry/katalog.html">
-      <p style="float: right; margin-right: 15px;" class="macos1">Katalog gier </p>
+      <button class="fancy-button">Katalog gier</button>
      </a>
     
 
